@@ -4,47 +4,103 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Clay Teufel</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            margin: 0 auto;
+            padding: 0 16px;
+            color-scheme: light dark;
+        }
+
+        article:not(:last-child) {
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+        }
+
+        h1, h2 {
+            font-size: 1.5em;
+        }
+
+        h1, h2, h3 {
+            font-weight: 300;
+        }
+
+        @media (min-width: 768px) {
+            h1, h2 {
+                font-size: 2.5em;
+                line-height: 1.5;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: monospace; padding: 0 15px">
-<h1>Hi.</h1>
-<p>I enjoy writing code, managing supply chains and often doing both at the same time.</p>
-<h2>Work</h2>
-<p>I co-founded <a href="https://resetsmile.com" target="_blank">ResetSmile</a/>.</p>
-<p>ResetSmile is a direct-to-consumer tooth replacement solution for the 130M+ Americans missing one or more (but not 
-    all) of their teeth.</p>
-<p>Before that I founded <a href="https://cartpilot.com" target="_blank">CartPilot</a>.</p>
-<p>CartPilot is an app for consumer product launches.</p>
-<p>Consumer product launches are difficult. We simplify everything from CAD/CAM to consumer and retail 
-	with an easy-to-use dashboard and RESTful API.</p>
-<p>I also made <a href="https://kadeaux.io" target="_blank">Kadeaux</a>, <a href="https://impress3d.com" target="_blank">
-	Impress3D</a>, <a href="https://treat3d.com" target="_blank">Treat3D</a>, <a href="https://fourthingsbread.com" 
-   target="_blank">Four Things</a>, <a href="https://getvetflex.com" target="_blank">Vetflex</a> and <a 
-	href="https://gemsportsdepot.com" target="_blank">Gem Sports Depot</a>.</p>
-<p>Kadeaux is an applied machine learning application that suggests gifts for your friends and family from a
-    database of over 201 million unique products.</p>
-<p>Impress3D provides 3D-printed partial dentures thru a network of dental professionals in over 20 countries.</p>
-<p>Treat3D is a dental lab management platform with automated case submission, design previewing, billing and shipping.</p>
-<p>Four Things provides fermented sourdough bread from the cloud to your door.</p>
-<p>Vetflex connects pet owners with openings at local vet clinics, on demand.</p>
-<p>Gem Sports Depot is a marketplace for high-end sports collectibles.</p>
-<h2>Education</h2>
-<p>I hold a B.S. in Finance from the University of Illinois at Urbana-Champaign.</p>
-<h2>Contact</h2>
-<p><a href="https://angel.co/clayteufel" target="_blank">AngelList</a> | <a href="https://github.com/cteufel2"
-                                                                            target="_blank">GitHub</a> | <a
-        href="https://linkedin.com/in/clayteufel" target="_blank">LinkedIn</a> | <a
-        href="https://medium.com/@clayteufel" target="_blank">Medium</a></p>
-<p>©<span id="year"></span> Clay Teufel. All rights reserved.</p>
+<body>
+<section id="about">
+    <h1>About</h1>
+    <p>I write code and manage supply chains.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <article>
+        <h3><a href="https://resetsmile.com" rel="noopener" target="_blank">ResetSmile</a></h3>
+        <p>ResetSmile is a direct-to-consumer tooth replacement solution for the 130M+ Americans missing one
+            or more (but not all) of their teeth.</p>
+    </article>
+    <article>
+        <h3><a href="https://treat3d.com" rel="noopener" target="_blank">Treat3D</a></h3>
+        <p>Treat3D is a dental lab management platform with automated case submission, design previewing, billing and
+            shipping.</p>
+    </article>
+    <article>
+        <h3><a href="https://impress3d.com" rel="noopener" target="_blank">Impress3D</a></h3>
+        <p>Impress3D provides 3D-printed partial dentures through a network of dental professionals in over 20
+            countries.</p>
+    </article>
+    <article>
+        <h3><a href="https://cartpilot.com" rel="noopener" target="_blank">CartPilot</a></h3>
+        <p>CartPilot is an app for consumer product launches, from manufacturing to point-of-sale.</p>
+    </article>
+    <article>
+        <h3><a href="https://powerdecal.com" rel="noopener" target="_blank">PowerDecal</a></h3>
+        <p>LED-backlit automotive decals that turn on and off with your vehicle.</p>
+    </article>
+</section>
+
+<section id="links">
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://angel.co/clayteufel" target="_blank">AngelList</a></li>
+        <li><a href="https://github.com/cteufel2" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/clayteufel" target="_blank">LinkedIn</a></li>
+    </ul>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <ul>
+        <li>B.S. in Finance, University of Illinois at Urbana-Champaign</li>
+    </ul>
+</section>
+
+<footer><p>© <span id="year"></span> Clay Teufel. All rights reserved.</p></footer>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103159052-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-103159052-1');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-103159052-1');
 </script>
 <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
+    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
 </script>
 </body>
 </html>
